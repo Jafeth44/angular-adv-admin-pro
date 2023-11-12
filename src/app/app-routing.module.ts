@@ -7,12 +7,12 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'dashboard',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
-  // {
-  //   path: '**',
-  //   component: NotFoundPageComponent,
-  // },
+  {
+    path: '**',
+    component: NotFoundPageComponent,
+  },
 ];
 
 @NgModule({

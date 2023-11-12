@@ -12,19 +12,19 @@ export const routes: Routes = [
     children: [
       {
         path: '',
-        component: DashboardComponent
+        component: DashboardComponent,
       },
       {
         path: 'graph',
-        component: GraphComponent
+        component: GraphComponent,
       },
       {
         path: 'progress',
-        component: ProgressComponent
+        component: ProgressComponent,
       },
-    ]
-  }
-]
+    ],
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
