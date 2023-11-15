@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { SettingsService } from '../../services/settings.service';
 declare function customInitFunction(): void;
 
@@ -7,13 +7,14 @@ declare function customInitFunction(): void;
   templateUrl: './layout.component.html',
   styles: ``
 })
-export class LayoutComponent implements OnInit {
+export class LayoutComponent {
 
   private settingsService = inject(SettingsService);
 
   public year = new Date().getFullYear();
 
-  ngOnInit(): void {
+
+  constructor() {
     customInitFunction();
   }
 }
